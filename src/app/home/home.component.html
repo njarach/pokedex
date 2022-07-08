@@ -1,0 +1,15 @@
+<section class="container mt-5">
+    <h1 class="text-center"><img src="/assets/logo.png" width="200" alt=""></h1>
+    <h2 class="text-center"><img *ngFor="let pokeball of listDePokemons" src="assets/pok.png" width="40" alt=""
+            [title]="pokeball.name"></h2>
+    <h5 class="text-center text-muted">Vous disposez de <strong class="text-success">{{listDePokemons.length}}</strong>
+        pokemons</h5>
+    <div class="col-md-6 mx-auto m-4">
+        <input type="search" class="form-control" placeholder="Rechercher un pokemon...">
+    </div>
+    <div class="row mx-auto">
+        <div *ngFor="let pokemon of listDePokemons" class="col-md-3 mx-auto text-center box" [routerLink]="['/detail',pokemon.id]">
+                <img width="100" [src]="pokemon.picture" alt="">
+        </div>
+    </div>
+</section>
