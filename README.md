@@ -1,7 +1,7 @@
 # pokedex
 First angular project to learn basics
 
-master branch to view angular code
+Master branch to view angular code : https://github.com/njarach/pokedex/tree/master
 
-https://njarach.github.io/pokedex/
+This project as an app : https://njarach.github.io/pokedex/
 
